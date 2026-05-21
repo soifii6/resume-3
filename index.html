@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 2.5em;
+        }
+
+        .header p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        /* Experience & Education */
+        .job-item, .edu-item {
+            margin-bottom: 20px;
+        }
+
+        .job-header, .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .job-title, .edu-degree {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .company, .school {
+            font-style: italic;
+            color: #e74c3c;
+        }
+
+        .date-range {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skills-container ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        /* Print styling for PDF export */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Alex Johnson</h1>
+            <p>Senior Full-Stack Developer & Tech Lead</p>
+            <div class="contact-info">
+                <span>Email: alex.johnson@email.com</span>
+                <span>Phone: (555) 123-4567</span>
+                <span>Location: Vancouver, BC</span>
+                <span>LinkedIn: ://linkedin.com</span>
+            </div>
+        </div>
+
+        <!-- Summary Section -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Results-driven Full-Stack Developer with over 8 years of experience building scalable web applications and leading high-performing engineering teams. Passionate about clean code, continuous integration, and delivering user-centric digital solutions.</p>
+        </section>
+
+        <!-- Experience Section -->
+        <section>
+            <h2>Work Experience</h2>
+            
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-title">Senior Software Engineer</span>
+                    <span class="date-range">Jan 2023 - Present</span>
+                </div>
+                <div class="job-header">
+                    <span class="company">TechNova Solutions, Vancouver, BC</span>
+                </div>
+                <ul>
+                    <li>Spearheaded the migration of legacy architecture to a microservices framework, reducing system latency by 40%.</li>
+                    <li>Mentored a team of 6 junior developers, conducting code reviews and driving pair-programming initiatives.</li>
+                    <li>Collaborated with product managers to define roadmaps and translate business requirements into technical specs.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-title">Full-Stack Developer</span>
+                    <span class="date-range">Mar 2020 - Dec 2022</span>
+                </div>
+                <div class="job-header">
+                    <span class="company">WebCraft Technologies, Toronto, ON</span>
+                </div>
+                <ul>
+                    <li>Developed and maintained responsive web interfaces using React, Redux, and Tailwind CSS.</li>
+                    <li>Built RESTful APIs using Node.js and Express, integrating with third-party payment gateways.</li>
+                    <li>Optimized frontend and backend performance, improving page load speeds by 25% and overall site SEO.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-title">Junior Web Developer</span>
+                    <span class="date-range">Jun 2018 - Feb 2020</span>
+                </div>
+                <div class="job-header">
+                    <span class="company">Creative Studio, Calgary, AB</span>
+                </div>
+                <ul>
+                    <li>Assisted in the design, development, and maintenance of various client websites.</li>
+                    <li>Executed cross-browser testing to ensure website compatibility across different devices.</li>
+                    <li>Implemented bug fixes and updated site content based on client feedback.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h2>Education</h2>
+            
+            <div class="edu-item">
+                <div class="edu-header">
+                    <span class="edu-degree">Bachelor of Science in Computer Science</span>
+                    <span class="date-range">Sep 2014 - May 2018</span>
+                </div>
+                <div class="edu-header">
+                    <span class="school">University of British Columbia, Vancouver, BC</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div>
+                    <strong>Technical & Programming Languages</strong>
+                    <ul>
+                        <li>JavaScript (ES6+), TypeScript, Python, Java</li>
+                        <li>HTML5, CSS3, SASS/SCSS, Tailwind CSS</li>
+                        <li>SQL, PostgreSQL, MongoDB</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>Frameworks & Tools</strong>
+                    <ul>
+                        <li>React, Next.js, Node.js, Express</li>
+                        <li>Git, GitHub, Docker, Kubernetes</li>
+                        <li>AWS (S3, EC2, Lambda), CI/CD Pipelines</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section>
+            <h2>Notable Projects</h2>
+            
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-title">E-Commerce Platform Redesign</span>
+                    <span class="date-range">2025</span>
+                </div>
+                <ul>
+                    <li>Architected and launched a fully decentralized, high-availability e-commerce platform handling 10,000+ daily active users.</li>
+                    <li>Integrated real-time analytics dashboard enabling clients to track inventory and user behavior metrics efficiently.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
